@@ -1,11 +1,8 @@
-<script lang="ts" type="module">
-	const greeting = 'Hello Everyone!';
+<script lang="ts">
+	import PostsGrid from '../components/home/postsGrid.svelte';
 </script>
 
 <div class="container">
-	<h1>{greeting}</h1>
-	<p>Working on this new project!</p>
+	<h2>Last entries</h2>
+	<PostsGrid />
 </div>
-
-<style>
-</style>

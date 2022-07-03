@@ -1,18 +1,8 @@
 <header>
 	<div class="container">
-		<h1>
-			<a href="/" class="logo"> MyBlog </a>
-		</h1>
-		<nav>
-			<ul>
-				<li>
-					<a href="/about">About</a>
-				</li>
-				<li>
-					<a href="/blog">Blog</a>
-				</li>
-			</ul>
-		</nav>
+		<h2>
+			<a href="/" class="logo">Isaac's Blog</a>
+		</h2>
 	</div>
 </header>
 
@@ -34,18 +24,5 @@
 	a {
 		color: #fff;
 		text-decoration: none;
-	}
-
-	nav {
-		height: 100%;
-		margin: auto 0;
-	}
-	ul {
-		display: flex;
-		gap: 10px;
-	}
-
-	li {
-		list-style: none;
 	}
 </style>

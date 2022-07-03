@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Header from '../components/header.svelte';
+	import Header from '../components/common/header.svelte';
 </script>
 
 <Header />
@@ -33,6 +33,17 @@
 	.container {
 		width: 100%;
 		padding: 0 30px;
+	}
+
+	.lazy {
+		width: 70px !important;
+		height: 70px !important;
+	}
+
+	.lazy-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	@media (min-width: 768px) {
