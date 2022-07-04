@@ -10,7 +10,9 @@
 	<meta name="description" content="Blog for developers about tips, news and more." />
 </svelte:head>
 
-<div class="container">
+<div>
 	<Banner />
-	<PostsGrid />
+	<div class="container">
+		<PostsGrid />
+	</div>
 </div>
