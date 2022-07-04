@@ -12,6 +12,8 @@
 {:else}
 	<div class="centered">
 		<h2>I'm coding awesome ideas to post right here!</h2>
+		<small>(Meanwhile you can see more about me <a href="https://isaacmartinez.dev">here</a>)</small
+		>
 	</div>
 {/if}
 
@@ -84,6 +86,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		flex-direction: column;
 	}
 
 	.grid {
@@ -95,5 +98,16 @@
 
 	h2 {
 		font-weight: 300;
+		font-size: 22px;
+		text-align: center;
+	}
+
+	small {
+		color: #848484;
+	}
+
+	a {
+		color: var(--primary-color-light);
+		text-decoration: none;
 	}
 </style>
