@@ -1,13 +1,5 @@
 <script lang="ts">
 	import { lazyLoad } from '../../services/lazyLoad';
-	type IPost = {
-		id: number;
-		title: string;
-		content: string;
-		createdAt: string;
-		updatedAt: string;
-		imageUrl: string;
-	};
 	export let post: IPost;
 </script>
 

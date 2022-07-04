@@ -16,6 +16,9 @@
 
 	:root {
 		--header-height: 60px;
+		--primary-color: rgb(27, 38, 50);
+		--primary-color-light: rgb(57, 80, 104);
+		--secondary-color: rgb(227, 227, 227);
 	}
 
 	body {
@@ -27,7 +30,6 @@
 		width: 100%;
 		overflow: auto;
 		height: calc(100vh - var(--header-height));
-		padding-top: 10px;
 	}
 
 	.container {
