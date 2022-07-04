@@ -1,21 +1,31 @@
 <script lang="ts">
 	import Card from '../common/card.svelte';
-	export let posts: IPost[] = [];
+	const fetchPosts = (async () => {
+		const response = await fetch('http://localhost:4000/posts');
+		const posts = await response.json();
+		console.log(posts);
+		return posts;
+	})();
 </script>
 
-{#if posts.length > 0}
-	<div class="grid">
-		{#each posts as post}
-			<Card {post} />
-		{/each}
-	</div>
-{:else}
-	<div class="centered">
-		<h2>I'm coding awesome ideas to post right here!</h2>
-		<small>(Meanwhile you can see more about me <a href="https://isaacmartinez.dev">here</a>)</small
-		>
-	</div>
-{/if}
+{#await fetchPosts}
+	<p>loading...</p>
+{:then posts}
+	{#if posts.length > 0}
+		<div class="grid">
+			{#each posts as post}
+				<Card {post} />
+			{/each}
+		</div>
+	{:else}
+		<div class="centered">
+			<h2>I'm coding awesome ideas to post right here!</h2>
+			<small
+				>(Meanwhile you can see more about me <a href="https://isaacmartinez.dev">here</a>)</small
+			>
+		</div>
+	{/if}
+{/await}
 
 <!-- <div class="grid">
 	<Card

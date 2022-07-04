@@ -1,8 +1,8 @@
 type IPost = {
-	id: number;
-	title: string;
-	content: string;
+	Id: number;
+	Title: string;
+	Body: string;
 	createdAt: string;
 	updatedAt: string;
-	imageUrl: string;
+	ImageUrl: string;
 };
