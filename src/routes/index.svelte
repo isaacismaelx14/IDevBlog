@@ -1,11 +1,16 @@
-<script lang="ts" type="module">
-	const greeting = 'Hello Everyone!';
+<script lang="ts">
+	import PostsGrid from '../components/home/postsGrid.svelte';
+	import Banner from '../components/home/banner.svelte';
+	import { config } from '../config/config';
+	let appTitle = config.app_name;
 </script>
 
-<div class="container">
-	<h1>{greeting}</h1>
-	<p>Working on this new project!</p>
-</div>
+<svelte:head>
+	<title>{appTitle} | home</title>
+	<meta name="description" content="Blog for developers about tips, news and more." />
+</svelte:head>
 
-<style>
-</style>
+<div class="container">
+	<Banner />
+	<PostsGrid />
+</div>
